@@ -1,0 +1,108 @@
+body{
+    background: url("../img/小张.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.love3d {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    width: 450px;
+    height: 450px;
+    margin-left: -170px;
+    margin-top: -330px;
+    transform-style: preserve-3d;
+    /* css自定义动画，参数：名称 时间 匀速 无限重复 */
+    animation: yes 1s linear infinite alternate;
+}
+
+/* 启动自定义动画 0-360°*/
+@keyframes yes {
+    form {
+        transform: rotateY(0deg) scale(1);
+    }
+    to {
+        transform: rotateY(15deg) scale(1.1);
+    }
+}
+
+.heart {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 300px;
+    height: 498px;
+    border: 2px solid red;
+    border-radius: 50% 50% 0/40% 50% 0;
+    box-shadow: 0px 0px 10px darkorange;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+/* 图片3d调整 */
+.cube {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 190px auto;
+    transform-style: preserve-3d;
+    /* 调整图片的位置 */
+    /* css自定义动画，参数：名称 时间 匀速 无限重复 */
+    animation: img_t 10s linear infinite alternate;
+}
+
+/* 启动自定义动画 0-360°*/
+
+@keyframes img_t {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+.in_frond {
+    transform: translateZ(80px);
+    opacity: 0.7;
+}
+
+.in_back {
+    transform: translateZ(-80px);
+    opacity: 0.7;
+}
+
+.in_left {
+    transform: rotateY(90deg) translateZ(80px);
+    opacity: 0.7;
+}
+
+.in_right {
+    transform: rotateY(-90deg) translateZ(80px);
+    opacity: 0.7;
+}
+
+.in_top {
+    transform: rotateX(90deg) translateZ(80px);
+    opacity: 0.7;
+}
+
+.in_bottom {
+    transform: rotateX(-90deg) translateZ(80px);
+    opacity: 0.7;
+}
+
+.cube div img {
+    width: 160px;
+    height: 160px;
+}

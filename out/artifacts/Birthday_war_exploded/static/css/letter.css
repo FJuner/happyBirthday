@@ -1,0 +1,109 @@
+body{
+    background: url("../img/贺卡.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.index{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    animation: rota 20s linear infinite alternate ;
+    transform-style: preserve-3d;
+}
+.index table{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    height: 260px;
+    margin: auto;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #008c8c;
+}
+.index .before{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 25px;
+    color: chartreuse;
+}
+.index .later{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 25px;
+    color:chartreuse;
+}
+
+.index .left{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 25px;
+    color:chartreuse ;
+}
+
+.index .right{
+    font-family:"Times New Roman", Times, serif;
+    font-size: 25px;
+    color:chartreuse;
+}
+
+
+
+.first{
+    transform: rotateY(-60deg) translateZ(100px) ;
+}
+.second{
+    transform: rotateY(60deg) translateY(200px) translateZ(-100px);
+}
+.third{
+    transform: rotateY(60deg) translateY(100px) translateZ(-150px);
+}
+.fourth{
+    transform: rotateY(60deg) translateY(-50px) translateZ(100px);
+}
+.fifth{
+    transform: rotateY(-60deg) translateX(150px) translateY(200px) translateZ(-100px);
+}
+.sixth{
+    transform: rotateY(-60deg) translateX(100px) translateY(100px) translateZ(-150px);
+}
+.seventh{
+    transform: rotateY(-60deg) translateX(-100px) translateY(-30px) translateZ(-50px);
+}
+.eighth{
+    transform: rotateY(-60deg) translateX(-100px) translateY(-10px) translateZ(50px);
+}
+.before{
+    font-size: 25px;
+    color: burlywood;
+    transform:translateZ(50px) translateY(100px);
+}
+.later{
+
+    transform:translateZ(-50px) translateY(100px);
+}
+.left{
+
+    transform: rotateY(90deg) translateZ(50px) translateY(100px);
+}
+.right{
+
+    transform: rotateY(-90deg) translateZ(50px) translateY(100px);
+}
+@keyframes rota{
+    form{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+.button{
+    width: 100px;
+    height: 40px;
+    margin:50px auto;
+}
+.sub_btn{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+
+    margin:30px auto ;
+     text-align: center;
+}
